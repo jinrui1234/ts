@@ -1,21 +1,17 @@
 "use strict";
 (function () {
-    //继承
+    // 以  abstract  开头的类是抽象类
+    //抽象类和其它类区别不大,只是不能用来创建对象
+    //抽象类只能用来被继承的类
     class Animal {
         constructor(name, age) {
             this.name = name;
             this.age = age;
         }
-
-        //抽象方法
-        //
-        run() {
-            console.log("run");
+    }
+    class Dog extends Animal {
+        test() {
         }
     }
-    //类的定义
-    class Cat extends Animal {
-
-    }
-    const cat = new Cat("咪咪", 3);
+    const dog = new Dog("咪咪", 3);
 })();
