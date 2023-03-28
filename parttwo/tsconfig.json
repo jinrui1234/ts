@@ -1,0 +1,47 @@
+{
+    //需要编译的文件(包含)
+    "include": [
+        "*.ts"
+    ],
+    //不需要编译的文件(排除)
+    "exclude": [],
+    //继承选项
+    // "extends": []
+    //设置包含的单个文件
+    // "files": []
+    //编译器的选项
+    "compilerOptions": {
+        //用来指定ts被编译为的es的版本  es2015  es2016  es2017  esNext
+        "target": "es2015",
+        //指定要使用的模块化规范   commonjs  amd  es2015(es6) 等等
+        "module": "es2015",
+        //指定项目中的使用的库 ， 在浏览器中不需要配置h
+        "lib": [],
+        //指定编译后文件所在目录
+        "outDir": "./dist",
+        //将代码合并成一个文件
+        // "outFile": "./dist/app.js"
+        //是否对js文件进行编译,默认false
+        "allowJs": false,
+        //是否检查js代码符合语法规范,默认false
+        "checkJs": false,
+        //是否移除注释
+        "removeComments": false,
+        //不生成编译后的文件
+        "noEmit": false,
+        //当有错误时,不生成编译后的文件
+        "noEmitOnError": false,
+        ///////////////////
+        //////////////////
+        //严格模式总开关
+        "strict": false,
+        //严格模式,编译后的文件是否使用严格模式
+        "alwaysStrict": false,
+        //是否允许隐式的any类型
+        "noImplicitAny": false,
+        //不允许不明确类型的this
+        "noImplicitThis": false,
+        //严格检查空值
+        "strictNullChecks": false,
+    }
+}
