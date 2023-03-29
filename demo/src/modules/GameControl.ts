@@ -2,7 +2,6 @@ import Food from "./Food"
 import ScorePanel from "./ScorePanel"
 import Snake from "./Snake"
 
-
 //游戏控制器
 export default class GameControl {
     //三个属性
@@ -17,7 +16,7 @@ export default class GameControl {
     constructor() {
         this.snake = new Snake()
         this.food = new Food()
-        this.scorePanel = new ScorePanel()
+        this.scorePanel = new ScorePanel(10,2)
         this.init()
     }
 
